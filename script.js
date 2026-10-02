@@ -85,6 +85,7 @@ function countUp() {
   document.querySelectorAll("[data-count]").forEach((el) => {
     const target = +el.dataset.count;
     let n = 0;
+    if (target === 0) return;
     const step = () => {
       n++;
       el.textContent = n;
@@ -197,3 +198,13 @@ document.getElementById("contactForm").addEventListener("submit", (e) => {
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// ---------- Back-to-top berganti warna di section merah ----------
+const contactSec = document.getElementById("contact");
+function toTopColor() {
+  const r = contactSec.getBoundingClientRect();
+  const btnY = window.innerHeight - 50;
+  toTop.classList.toggle("on-red", r.top < btnY && r.bottom > btnY);
+}
+window.addEventListener("scroll", toTopColor, { passive: true });
+toTopColor();

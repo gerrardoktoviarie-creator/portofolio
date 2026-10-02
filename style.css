@@ -218,10 +218,10 @@ button { font: inherit; border: none; background: none; color: inherit; }
   clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 40px 100%, 0 calc(100% - 40px));
 }
 .corner { position: absolute; width: 16px; height: 16px; border: 2px solid var(--red); z-index: 2; }
-.corner.tl { top: 24px; left: 24px; border-right: 0; border-bottom: 0; }
-.corner.tr { top: 24px; right: 24px; border-left: 0; border-bottom: 0; }
-.corner.bl { bottom: 128px; left: 24px; border-right: 0; border-top: 0; }
-.corner.br { bottom: 128px; right: 24px; border-left: 0; border-top: 0; }
+.corner.tl { top: 12px; left: 12px; border-right: 0; border-bottom: 0; }
+.corner.tr { top: 12px; right: 12px; border-left: 0; border-bottom: 0; }
+.corner.bl { bottom: 12px; left: 12px; border-right: 0; border-top: 0; }
+.corner.br { bottom: 12px; right: 12px; border-left: 0; border-top: 0; }
 .agent__photo {
   position: relative; aspect-ratio: 4 / 4.4; overflow: hidden;
   background:
@@ -610,4 +610,48 @@ button { font: inherit; border: none; background: none; color: inherit; }
 @media (max-width: 560px) {
   .hero__name { font-size: clamp(40px, 12.5vw, 56px); }
   .nav__logo-sub { font-size: 8.5px; letter-spacing: .8px; }
+}
+
+/* ============ RESPONSIVE FIXES ============ */
+/* Slab gelap mulai di bawah navbar, biar menu tetap terbaca */
+@media (min-width: 961px) {
+  .hero::after { top: var(--nav-h); }
+}
+/* Tombol filter muat di HP kecil tanpa geser samping */
+@media (max-width: 400px) {
+  .filters { overflow: visible; }
+  .filter { flex: 1; padding: 12px 4px; font-size: 11.5px; letter-spacing: 1px; }
+}
+
+/* ============ KERAPIHAN ============ */
+/* Info kartu Agent: kolom menyesuaikan isi, tidak mepet */
+.agent__info { grid-template-columns: auto auto auto; justify-content: space-between; gap: 14px; }
+.agent__info strong { white-space: nowrap; }
+
+/* Tulisan PORTFOLIO di belakang hero dibuat lebih samar */
+.hero__bgtext { -webkit-text-stroke-color: rgba(15, 25, 35, .05); bottom: -7vw; }
+
+/* Tombol back-to-top gelap saat berada di section merah */
+.to-top.on-red { background: var(--ink); }
+.to-top.on-red:hover { background: var(--bone); color: var(--ink); }
+
+@media (max-width: 560px) {
+  /* Tombol hero sama lebar */
+  .hero__actions { flex-direction: column; gap: 12px; }
+  .hero__actions .vbtn { width: 100%; }
+  .hero__stats span { font-size: 10px; letter-spacing: .6px; }
+
+  /* Skills: tidak ada celah kosong di tengah, loadout 2 kolom */
+  .sub-title--ghost { display: none; }
+  .loadout { grid-template-columns: 1fr 1fr; }
+
+  /* Judul project tidak terlalu besar */
+  .mission__body h3 { font-size: 40px; }
+  .mission__thumb { padding: 22px 18px 0; }
+  .mission__links { gap: 20px; }
+
+  /* Contact */
+  .contact__bgtext { display: none; }
+  .socials { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .socials a { text-align: center; padding: 10px 6px; letter-spacing: 1px; }
 }
