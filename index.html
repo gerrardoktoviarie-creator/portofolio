@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Gerrad Oktoviarie — Portofolio</title>
+  <meta name="description" content="Portofolio Nama Kamu, siswa SMK jurusan Rekayasa Perangkat Lunak." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ INTRO LOADER ============ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <span class="loader__tag">// Memuat profil</span>
+      <div class="loader__title">Muhammad Gerrad Oktoviarie</div>
+      <div class="loader__bar"><span></span></div>
+      <span class="loader__status" id="loaderStatus">Menyiapkan arsenal...</span>
+    </div>
+  </div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo" data-link>
+        <span class="nav__logo-mark">
+          <svg viewBox="0 0 40 40"><path d="M4 6 L20 34 L24 26 L14 6 Z M26 6 L36 6 L28 20 L23 11 Z" fill="currentColor"/></svg>
+        </span>
+        <span class="nav__logo-text">Muhammad <b>Gerrad</b> Oktoviarie</span>
+      </a>
+
+      <nav class="nav__menu" id="navMenu">
+        <a href="#home" class="nav__link active" data-link><i>01</i>Home</a>
+        <a href="#about" class="nav__link" data-link><i>02</i>About &amp; Skills</a>
+        <a href="#portfolio" class="nav__link" data-link><i>03</i>Portofolio</a>
+        <a href="#projects" class="nav__link" data-link><i>04</i>Project</a>
+        <a href="#contact" class="nav__link" data-link><i>05</i>Contact</a>
+      </nav>
+
+      <a href="#contact" class="vbtn vbtn--sm nav__cta" data-link><span>Hire Me</span></a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Buka menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HOME ============ -->
+    <section class="hero" id="home">
+      <div class="hero__bgtext" aria-hidden="true">PORTFOLIO</div>
+      <div class="hero__grid-lines" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="hero__tag reveal">
+            <span class="dot"></span> Status: Siap PKL / Magang
+          </div>
+
+          <h1 class="hero__title reveal">
+            <span class="hero__hello">Halo, Saya</span>
+            <span class="hero__name">Muhammad Gerrad Oktoviarie</span>
+          </h1>
+
+          <p class="hero__role reveal">
+            <span class="hero__role-label">Role //</span>
+            <span id="typed">Web Developer</span><span class="caret"></span>
+          </p>
+
+          <p class="hero__desc reveal">
+            Siswa <strong>SMKN 6 JAKARTA</strong>, jurusan
+            <strong>Rekayasa Perangkat Lunak (RPL)</strong>. Saya membangun website
+            yang rapi, cepat, dan nyaman digunakan — dengan presisi seperti satu tembakan tepat sasaran.
+          </p>
+
+          <div class="hero__actions reveal">
+            <a href="#projects" class="vbtn" data-link><span>Lihat Project</span></a>
+            <a href="#" class="vbtn vbtn--outline" download><span>Download CV</span></a>
+          </div>
+
+          <ul class="hero__stats reveal">
+            <li><strong data-count="5">0</strong><b>+</b><span>Project</span></li>
+            <li><strong data-count="2">0</strong><span>Tahun Coding</span></li>
+            <li><strong data-count="0">0</strong><span>Sertifikat</span></li>
+          </ul>
+        </div>
+
+        <!-- Agent card -->
+        <div class="agent reveal">
+          <div class="agent__frame">
+            <span class="corner tl"></span><span class="corner tr"></span>
+            <span class="corner bl"></span><span class="corner br"></span>
+
+            <div class="agent__photo">
+              <!-- Ganti dengan foto kamu: <img src="foto.jpg" alt="Nama Kamu"> -->
+              <span class="agent__initial">NK</span>
+              <div class="agent__stripe"></div>
+            </div>
+
+            <div class="agent__meta">
+              <div>
+                <span class="agent__label">Agent</span>
+                <strong class="agent__name">Muhammad Gerrad Oktoviarie</strong>
+              </div>
+              <div class="agent__role">
+                <svg viewBox="0 0 24 24"><path d="M12 2 L22 12 L12 22 L2 12 Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7 L17 12 L12 17 L7 12 Z" fill="currentColor"/></svg>
+                <span>Developer</span>
+              </div>
+            </div>
+
+            <div class="agent__info">
+              <div><span>Origin</span><strong>Indonesia</strong></div>
+              <div><span>Base</span><strong>SMKN 6 JAKARTA</strong></div>
+              <div><span>Class</span><strong>XI RPL</strong></div>
+            </div>
+          </div>
+          <div class="agent__id">ID // RPL-2026-001</div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" data-link>
+        <span>Scroll</span><i></i>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT & SKILLS ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__num">02</span>
+          <div>
+            <span class="section__eyebrow">// About &amp; Skills</span>
+            <h2 class="section__title">Agent <em>Dossier</em></h2>
+          </div>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p class="lead">
+              Saya <strong>Muhammad Gerrad Oktoviarie</strong>, siswa kelas XI di
+              <strong>SMKN 6 JAKARTA</strong>, jurusan
+              <strong>Rekayasa Perangkat Lunak</strong>.
+            </p>
+            <p>
+              Ketertarikan saya pada teknologi berawal dari rasa penasaran bagaimana sebuah
+              website bekerja. Sekarang saya fokus pada pengembangan web — dari tampilan
+              front-end hingga back-end sederhana dan database.
+            </p>
+            <p>
+              Saya terbiasa bekerja dalam tim, disiplin terhadap deadline, dan cepat
+              beradaptasi. Saat ini saya mencari kesempatan <strong>PKL / magang</strong>
+              untuk berkontribusi langsung di dunia industri.
+            </p>
+
+            <div class="dossier">
+              <div><span>Sekolah</span><strong>SMKN 6 JAKARTA</strong></div>
+              <div><span>Jurusan</span><strong>Rekayasa Perangkat Lunak</strong></div>
+              <div><span>Domisili</span><strong>Jakarta, Indonesia</strong></div>
+              <div><span>Email</span><strong>gerrardoktoviarie@gmail.com</strong></div>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <h3 class="sub-title">Abilities</h3>
+            <div class="abilities">
+              <div class="ability">
+                <span class="ability__key">C</span>
+                <div><strong>Front-End</strong><p>HTML, CSS, JavaScript, React — layout responsif &amp; interaktif.</p></div>
+              </div>
+              <div class="ability">
+                <span class="ability__key">Q</span>
+                <div><strong>Back-End</strong><p>PHP, Laravel, MySQL &amp; Supabase untuk data dan autentikasi.</p></div>
+              </div>
+              <div class="ability">
+                <span class="ability__key">E</span>
+                <div><strong>UI Design</strong><p>Wireframe dan prototipe di Figma sebelum mulai coding.</p></div>
+              </div>
+              <div class="ability ability--ult">
+                <span class="ability__key">X</span>
+                <div><strong>Ultimate: Ship It</strong><p>Dari ide sampai online — deploy ke Vercel &amp; GitHub.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills reveal">
+          <div class="skills__col">
+            <h3 class="sub-title">Combat Stats</h3>
+            <div class="skill" data-level="9"><div class="skill__head"><span>HTML &amp; CSS</span><b>80</b></div><div class="skill__seg"></div></div>
+            <div class="skill" data-level="8"><div class="skill__head"><span>JavaScript</span><b>65</b></div><div class="skill__seg"></div></div>
+            <div class="skill" data-level="7"><div class="skill__head"><span>React</span><b>65</b></div><div class="skill__seg"></div></div>
+          </div>
+          <div class="skills__col">
+            <h3 class="sub-title sub-title--ghost">&nbsp;</h3>
+            <div class="skill" data-level="7"><div class="skill__head"><span>PHP &amp; MySQL</span><b>70</b></div><div class="skill__seg"></div></div>
+            <div class="skill" data-level="6"><div class="skill__head"><span>UI Design (Figma)</span><b>85</b></div><div class="skill__seg"></div></div>
+            <div class="skill" data-level="7"><div class="skill__head"><span>Git &amp; GitHub</span><b>80</b></div><div class="skill__seg"></div></div>
+          </div>
+          <div class="skills__col">
+            <h3 class="sub-title">Loadout</h3>
+            <div class="loadout">
+              <span>VS Code</span><span>Git</span><span>Figma</span><span>Supabase</span>
+              <span>Vercel</span><span>Tailwind</span><span>Laravel</span><span>Vite</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO ============ -->
+    <section class="section section--dark" id="portfolio">
+      <div class="container">
+        <div class="section__head section__head--row reveal">
+          <div class="section__head-l">
+            <span class="section__num">03</span>
+            <div>
+              <span class="section__eyebrow">// Portofolio</span>
+              <h2 class="section__title">The <em>Arsenal</em></h2>
+            </div>
+          </div>
+          <div class="filters" id="filters">
+            <button class="filter active" data-filter="all">Semua</button>
+            <button class="filter" data-filter="web">Web</button>
+            <button class="filter" data-filter="design">Design</button>
+            <button class="filter" data-filter="cert">Sertifikat</button>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <article class="work reveal" data-cat="web" data-tier="red">
+            <div class="work__thumb g1"><span class="work__type">Landing Page</span></div>
+            <div class="work__body"><span class="work__cat">Web</span><h3>Landing Page Kedai Kopi</h3></div>
+          </article>
+          <article class="work reveal" data-cat="design" data-tier="teal">
+            <div class="work__thumb g2"><span class="work__type">Mobile UI</span></div>
+            <div class="work__body"><span class="work__cat">Design</span><h3>UI Aplikasi Kasir</h3></div>
+          </article>
+          <article class="work reveal" data-cat="cert" data-tier="gold">
+            <div class="work__thumb g3"><span class="work__type">Sertifikat</span></div>
+            <div class="work__body"><span class="work__cat">Sertifikat</span><h3>Dicoding — Dasar Web</h3></div>
+          </article>
+          <article class="work reveal" data-cat="web" data-tier="teal">
+            <div class="work__thumb g4"><span class="work__type">Dashboard</span></div>
+            <div class="work__body"><span class="work__cat">Web</span><h3>Dashboard Data Siswa</h3></div>
+          </article>
+          <article class="work reveal" data-cat="design" data-tier="red">
+            <div class="work__thumb g5"><span class="work__type">Redesign</span></div>
+            <div class="work__body"><span class="work__cat">Design</span><h3>Redesign Website Sekolah</h3></div>
+          </article>
+          <article class="work reveal" data-cat="cert" data-tier="gold">
+            <div class="work__thumb g6"><span class="work__type">Kompetisi</span></div>
+            <div class="work__body"><span class="work__cat">Sertifikat</span><h3>Juara 2 LKS Web Tech</h3></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__num">04</span>
+          <div>
+            <span class="section__eyebrow">// Project</span>
+            <h2 class="section__title">Mission <em>Log</em></h2>
+          </div>
+        </div>
+
+        <div class="missions">
+          <article class="mission reveal">
+            <!-- Tambah screenshot lain: data-gallery="img/a.png, img/b.png, img/c.png" -->
+            <div class="mission__thumb g1" data-gallery="img/dashboard-LG.png" data-title="LokalGem">
+              <div class="mock">
+                <div class="mock__bar"><i></i><i></i><i></i><span>lokalgem.vercel.app</span></div>
+                <div class="mock__screen"><img src="img/dashboard-LG.png" alt="Dashboard LokalGem" loading="lazy" /></div>
+              </div>
+              <span class="mission__status mission__status--live">● Live</span>
+              <span class="mission__zoom">⤢ Lihat Screenshot</span>
+            </div>
+            <div class="mission__body">
+              <span class="mission__num">Mission 01</span>
+              <h3>LokalGem</h3>
+              <p>Platform untuk menemukan tempat-tempat lokal tersembunyi. Dibangun dengan React (Vite) dan Supabase sebagai database &amp; autentikasi, lalu di-deploy ke Vercel.</p>
+              <div class="chips"><span>React</span><span>Vite</span><span>Supabase</span><span>Vercel</span></div>
+              <div class="mission__links">
+                <a href="https://lokalgem.vercel.app" target="_blank" rel="noopener">Live Demo ↗</a>
+                <a href="#" target="_blank" rel="noopener">Source Code ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="mission mission--reverse reveal">
+            <div class="mission__thumb g4">
+              <div class="mock">
+                <div class="mock__bar"><i></i><i></i><i></i><span>perpustakaan-sekolah</span></div>
+                <div class="mock__screen"><span class="mock__empty">// Screenshot segera</span></div>
+              </div>
+              <span class="mission__status">✓ Completed</span>
+            </div>
+            <div class="mission__body">
+              <span class="mission__num">Mission 02</span>
+              <h3>Sistem Perpustakaan Sekolah</h3>
+              <p>Aplikasi web untuk mengelola peminjaman buku, data anggota, dan laporan bulanan. Dibuat sebagai tugas Uji Kompetensi Keahlian (UKK).</p>
+              <div class="chips"><span>PHP</span><span>Laravel</span><span>MySQL</span><span>Bootstrap</span></div>
+              <div class="mission__links">
+                <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
+                <a href="#" target="_blank" rel="noopener">Source Code ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="mission reveal">
+            <div class="mission__thumb g2">
+              <div class="mock">
+                <div class="mock__bar"><i></i><i></i><i></i><span>todo-app</span></div>
+                <div class="mock__screen"><span class="mock__empty">// Screenshot segera</span></div>
+              </div>
+              <span class="mission__status">✓ Completed</span>
+            </div>
+            <div class="mission__body">
+              <span class="mission__num">Mission 03</span>
+              <h3>Aplikasi To-Do &amp; Catatan</h3>
+              <p>Aplikasi produktivitas dengan fitur tambah, edit, hapus, dan penyimpanan lokal. Fokus pada tampilan yang bersih dan responsif.</p>
+              <div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <div class="mission__links">
+                <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
+                <a href="#" target="_blank" rel="noopener">Source Code ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--red" id="contact">
+      <div class="contact__bgtext" aria-hidden="true">LOCK IN</div>
+      <div class="container contact__grid">
+        <div class="reveal">
+          <div class="section__head section__head--tight">
+            <span class="section__num section__num--light">05</span>
+            <div>
+              <span class="section__eyebrow section__eyebrow--light">// Contact</span>
+              <h2 class="section__title">Siap Masuk <em>Tim?</em></h2>
+            </div>
+          </div>
+          <p class="contact__desc">
+            Tertarik mengajak saya PKL, magang, atau berkolaborasi dalam project?
+            Kirim pesan — saya akan membalas secepatnya.
+          </p>
+
+          <ul class="contact__list">
+            <li><span>Email</span><a href="mailto:email@kamu.com">gerrardoktoviarie@gmail.com</a></li>
+            <li><span>WhatsApp</span><a href="https://wa.me/6281234567890" target="_blank" rel="noopener">+62 812-3456-7890</a></li>
+            <li><span>Lokasi</span><strong>Jakarta, Indonesia</strong></li>
+          </ul>
+
+          <div class="socials">
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="#" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+
+        <form class="contact__form reveal" id="contactForm">
+          <div class="contact__form-head"><span>// Kirim Transmisi</span><i></i></div>
+          <label><span>Nama</span><input type="text" name="name" placeholder="Nama lengkap" required /></label>
+          <label><span>Email</span><input type="email" name="email" placeholder="nama@perusahaan.com" required /></label>
+          <label><span>Pesan</span><textarea name="message" rows="5" placeholder="Tulis pesan..." required></textarea></label>
+          <button type="submit" class="vbtn vbtn--dark vbtn--full"><span>Lock In — Kirim Pesan</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Muhammad Gerrad Oktoviarie — Dibuat dengan HTML, CSS &amp; JavaScript.</span>
+      <a href="#home" data-link>Kembali ke atas ↑</a>
+    </div>
+  </footer>
+
+  <!-- ============ LIGHTBOX SCREENSHOT ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lbClose" aria-label="Tutup">✕</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Sebelumnya">‹</button>
+    <figure class="lightbox__figure">
+      <img id="lbImg" src="" alt="" />
+      <figcaption><span id="lbTitle"></span><b id="lbCount"></b></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Berikutnya">›</button>
+  </div>
+
+  <a href="#home" class="to-top" id="toTop" data-link aria-label="Kembali ke atas">
+    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
