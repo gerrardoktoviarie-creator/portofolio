@@ -119,8 +119,10 @@ button { font: inherit; border: none; background: none; color: inherit; }
   clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 100%, 0 100%);
 }
 .nav__logo-mark svg { width: 24px; height: 24px; }
-.nav__logo-text { font: 26px/1 var(--display); letter-spacing: 1.5px; }
-.nav__logo-text b { color: var(--red); font-weight: 400; }
+.nav__logo-text { display: flex; flex-direction: column; gap: 3px; padding-left: 12px; border-left: 1px solid var(--line-dark); }
+.nav__logo-name { font: 26px/.9 var(--display); letter-spacing: 2px; }
+.nav__logo-name b { color: var(--red); font-weight: 400; }
+.nav__logo-sub { font: 9.5px/1 var(--mono); letter-spacing: 1.2px; text-transform: uppercase; color: var(--text-soft); white-space: nowrap; }
 
 .nav__menu { display: flex; gap: 2px; }
 .nav__link {
@@ -188,7 +190,7 @@ button { font: inherit; border: none; background: none; color: inherit; }
 .hero__title { margin: 26px 0 8px; }
 .hero__hello { display: block; font: 600 20px var(--font); letter-spacing: 4px; text-transform: uppercase; color: var(--text-soft); }
 .hero__name {
-  display: block; font: clamp(72px, 10vw, 150px)/.85 var(--display);
+  display: block; font: clamp(52px, 6.6vw, 96px)/.9 var(--display);
   letter-spacing: 1px; color: var(--ink); margin-top: 6px;
 }
 .hero__role {
@@ -237,7 +239,9 @@ button { font: inherit; border: none; background: none; color: inherit; }
 }
 .agent__meta { display: flex; justify-content: space-between; align-items: flex-end; padding: 16px 6px 12px; border-bottom: 1px solid var(--line-light); }
 .agent__label { display: block; font: 11px var(--mono); color: var(--red); letter-spacing: 1.5px; text-transform: uppercase; }
-.agent__name { font: 34px/1 var(--display); letter-spacing: 1.5px; font-weight: 400; }
+.agent__name { display: block; font: 34px/1 var(--display); letter-spacing: 1.5px; font-weight: 400; }
+.agent__fullname { display: block; margin-top: 4px; font: 10px var(--mono); color: #9aa5b1; letter-spacing: 1px; text-transform: uppercase; }
+.agent__meta { gap: 12px; }
 .agent__role { display: flex; align-items: center; gap: 6px; font: 600 12px var(--font); letter-spacing: 2px; text-transform: uppercase; color: var(--teal); }
 .agent__role svg { width: 18px; height: 18px; }
 .agent__info { display: grid; grid-template-columns: repeat(3, 1fr); padding: 12px 6px 6px; }
@@ -593,4 +597,17 @@ button { font: inherit; border: none; background: none; color: inherit; }
   .contact__form { padding: 26px 22px; }
   .contact__list li { flex-direction: column; gap: 2px; }
   .contact__list li span { align-self: flex-start; }
+}
+
+/* ============ NAMA PANJANG ============ */
+.hero__name-line { display: block; white-space: nowrap; }
+.hero__name em { font-style: normal; color: var(--red); }
+
+@media (max-width: 1100px) and (min-width: 769px) {
+  .nav__logo-sub { display: none; }
+  .nav__logo-text { padding-left: 10px; }
+}
+@media (max-width: 560px) {
+  .hero__name { font-size: clamp(40px, 12.5vw, 56px); }
+  .nav__logo-sub { font-size: 8.5px; letter-spacing: .8px; }
 }
