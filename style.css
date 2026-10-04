@@ -17,8 +17,8 @@
   --font: "Barlow", system-ui, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, monospace;
   --cut: 18px;
-  /* crosshair cursor */
-  --cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cg stroke='%23ff4655' stroke-width='2'%3E%3Cpath d='M12 2v6M12 16v6M2 12h6M16 12h6'/%3E%3C/g%3E%3Ccircle cx='12' cy='12' r='1.5' fill='%23ff4655'/%3E%3C/svg%3E") 12 12, crosshair;
+  /* crosshair cursor: cyan with a dark outline so it shows on light, dark and red sections */
+  --cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cg stroke='%230f1923' stroke-width='4' stroke-linecap='square'%3E%3Cpath d='M12 2v6M12 16v6M2 12h6M16 12h6'/%3E%3C/g%3E%3Ccircle cx='12' cy='12' r='2.5' fill='%230f1923'/%3E%3Cg stroke='%2300f0ff' stroke-width='2'%3E%3Cpath d='M12 2v6M12 16v6M2 12h6M16 12h6'/%3E%3C/g%3E%3Ccircle cx='12' cy='12' r='1.5' fill='%2300f0ff'/%3E%3C/svg%3E") 12 12, crosshair;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }

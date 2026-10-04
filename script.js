@@ -194,7 +194,7 @@ document.getElementById("contactForm").addEventListener("submit", (e) => {
   const data = new FormData(e.target);
   const subject = encodeURIComponent(`Pesan dari ${data.get("name")}`);
   const body = encodeURIComponent(`${data.get("message")}\n\n— ${data.get("name")} (${data.get("email")})`);
-  window.location.href = `mailto:email@kamu.com?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:gerrardoktoviarie@gmail.com?subject=${subject}&body=${body}`;
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
